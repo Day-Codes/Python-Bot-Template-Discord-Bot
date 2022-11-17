@@ -1,0 +1,61 @@
+{member.mention}
+
+
+
+
+        embed.add_field(name=f"[$/@]help", value="Shows this message!", inline=False)
+        embed.add_field(name=f"[$/@] moan", value="I moan", inline=False)
+        embed.add_field(name=f"[$/@]ping", value=f"Tells you the latency of {client.user.name}#{client.user.discriminator}!", inline=False)
+        embed.add_field(name=f"[$/@] yo", value="Say yo to the bot and others!", inline=False)
+        embed.add_field(name=f" [$/@]fight", value="Let's fight m8!", inline=False)
+        embed.add_field(name=f"[$/@] yo", value="Say yo to the bot and others!", inline=False)
+        embed.add_field(name=f" [$/@]kick", value="Need admin", inline=False)
+        embed.add_field(name=f" [$/@]ban", value="Need admin", inline=False)
+        embed.add_field(name=f" [$/@]setdelay", value="Need admin or maybe owner", inline=False)
+        embed.add_field(name=f" [$/@]warn", value="Need admin", inline=False)
+        embed.add_field(name=f" [$/@]cumme", value="test it ;)", inline=False)
+        embed.add_field(name=f" [$/@]moangif", value="an moaning gif", inline=False)
+        embed.add_field(name=f" [$/@]devinfo", value="about the dev", inline=False)
+        embed.add_field(name=f" [$/@]VENOM", value="Yo test it!", inline=False)
+        embed.add_field(name=f" [$/@]devstatus", value="to tell the status of the dev!", inline=False)
+        embed.add_field(name=f" [$/@]funnygif", value="funny gif!", inline=False)
+
+
+
+@client.command()
+async def servers(ctx):
+        guilds = len(client.guilds)
+
+        embed = discord.Embed(title="", description="", color=0x00FFFF)
+        embed.add_field(name="Server Count:", value=f"{client.user.name} in currently in **{guilds}** guilds!", inline=True)
+        await ctx.send(embed=embed)
+        await ctx.message.delete()
+
+
+
+
+        
+        
+@client.command()
+async def help(ctx): 
+        embed = discord.Embed(title="Help command!", description="", color=0x00FFFF)
+        embed.add_field(name=f"[$/@]help", value="Shows this message!", inline=False)
+        embed.add_field(name=f"[$/@] moan", value="I moan", inline=False)
+        embed.add_field(name=f"[$/@]ping", value=f"Tells you the latency of {client.user.name}#{client.user.discriminator}!", inline=False)
+        embed.add_field(name=f"[$/@] yo", value="Say yo to the bot and others!", inline=False)
+        embed.add_field(name=f" [$/@]fight", value="Let's fight m8!", inline=False)
+        embed.add_field(name=f"[$/@] yo", value="Say yo to the bot and others!", inline=False)
+        embed.add_field(name=f" [$/@]kick", value="Need admin", inline=False)
+        embed.add_field(name=f" [$/@]ban", value="Need admin", inline=False)
+        embed.add_field(name=f" [$/@]setdelay", value="Need admin or maybe owner", inline=False)
+        embed.add_field(name=f" [$/@]warn", value="Need admin", inline=False)
+        embed.add_field(name=f" [$/@]cumme", value="test it ;)", inline=False)
+        embed.add_field(name=f" [$/@]moangif", value="an moaning gif", inline=False)
+        embed.add_field(name=f" [$/@]devinfo", value="about the dev", inline=False)
+        embed.add_field(name=f" [$/@]VENOM", value="Yo test it!", inline=False)
+        embed.add_field(name=f" [$/@]devstatus", value="to tell the status of the dev!", inline=False)
+        embed.add_field(name=f" [$/@]funnygif", value="funny gif!", inline=False)
+
+
+        await ctx.message.delete()
+        await ctx.send(embed=embed)
