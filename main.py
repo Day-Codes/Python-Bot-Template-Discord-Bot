@@ -4,10 +4,11 @@ from discord.ext import commands
 import keep_alive
 import random 
 
+# Made By Dayln - DO NOT REMOVE CREDITS! Join our support server in the github rospository!
 
 
-client = commands.Bot(command_prefix = commands.when_mentioned_or("PREFIX HERE!"),case_insensitive=True)
-# To make your own help command: help_command=None
+client = commands.Bot(command_prefix = commands.when_mentioned_or("PREFIX HERE!"),case_insensitive=True, help_command=None)
+# To make your own help command: help_command=None (Remove if you dont want to make one)
 @client.event
 async def on_ready():
         await client.change_presence(status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.watching, name="you"))
